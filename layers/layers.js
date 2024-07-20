@@ -1,3 +1,5 @@
+ol.proj.proj4.register(proj4);
+//ol.proj.get("EPSG:4326").setExtent([100.079141, 15.640670, 100.197338, 15.699091]);
 var wms_layers = [];
 
 
@@ -14,7 +16,7 @@ var wms_layers = [];
         });
 var format__1 = new ol.format.GeoJSON();
 var features__1 = format__1.readFeatures(json__1, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:4326'});
 var jsonSource__1 = new ol.source.Vector({
     attributions: ' ',
 });
@@ -29,7 +31,7 @@ var lyr__1 = new ol.layer.Vector({
             });
 var format__2 = new ol.format.GeoJSON();
 var features__2 = format__2.readFeatures(json__2, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:4326'});
 var jsonSource__2 = new ol.source.Vector({
     attributions: ' ',
 });
@@ -44,7 +46,7 @@ var lyr__2 = new ol.layer.Vector({
             });
 var format__3 = new ol.format.GeoJSON();
 var features__3 = format__3.readFeatures(json__3, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:4326'});
 var jsonSource__3 = new ol.source.Vector({
     attributions: ' ',
 });
@@ -59,7 +61,7 @@ var lyr__3 = new ol.layer.Vector({
             });
 var format__4 = new ol.format.GeoJSON();
 var features__4 = format__4.readFeatures(json__4, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:4326'});
 var jsonSource__4 = new ol.source.Vector({
     attributions: ' ',
 });
